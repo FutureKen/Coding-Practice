@@ -13,7 +13,7 @@ The signature of the `C++` function had been updated. If you still see your func
 
 [spoilers alert... click to show requirements for atoi.](#)
 
-<div class="spoilers" style="display: none;">**Requirements for atoi:**
+<div class="spoilers" style="display: block;">**Requirements for atoi:**
 
 The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
 
@@ -30,6 +30,12 @@ If no valid conversion could be performed, a zero value is returned. If the corr
 [Subscribe](/subscribe/) to see which companies asked this question
 
 </div>
+
+<div>
+
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
+
+<span class="hidebutton">[Amazon](/company/amazon/) [Bloomberg](/company/bloomberg/) [Microsoft](/company/microsoft/) [Uber](/company/uber/)</span></div>
 
 <div>
 
