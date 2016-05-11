@@ -11,12 +11,9 @@
  */
 public class Solution {
     public String convertToTitle(int n) {
-        String result = "";
-        while ( n != 0) {
-            n--;
-            result = (char)(n % 26 + 'A') + result;;
-            n = n / 26;
+        if (n == 0) {
+            return "";
         }
-        return result;   
+        return convertToTitle((n - 1) / 26) + (char)((n - 1) % 26 + 'A');
     }
 }
