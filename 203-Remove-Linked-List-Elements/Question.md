@@ -19,12 +19,12 @@ Special thanks to [@mithmatt](https://leetcode.com/discuss/user/mithmatt) for ad
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Linked List](/tag/linked-list/)</span></div>
+<span class="hidebutton">[Linked List](/tag/linked-list/)</span></div>
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: inline;">[(E) Remove Element](/problems/remove-element/) [(E) Delete Node in a Linked List](/problems/delete-node-in-a-linked-list/)</span></div>
+<span class="hidebutton">[(E) Remove Element](/problems/remove-element/) [(E) Delete Node in a Linked List](/problems/delete-node-in-a-linked-list/)</span></div>
