@@ -6,24 +6,19 @@ public class Solution {
             return false;
         }
         HashMap<Character, Character> h1 = new HashMap<Character, Character>();
-        HashMap<Character, Character> h2 = new HashMap<Character, Character>();
+        HashSet<Character> mapped = new HashSet<>();
         for (int i = 0; i < s.length(); i++) {
-            char c1 = s.charAt(i);
-            char c2 = t.charAt(i);
-            if (h1.containsKey(c1)) {
-                if (h1.get(c1) != c2) {
+            if (h1.containsKey(s.charAt(i))) {
+                if (h1.get(s.charAt(i)) != t.charAt(i)) {
                     return false;
-                } 
-            } else {
-                h1.put(c1, c2);
-            }
-            if (h2.containsKey(c2)) {
-                if (h2.get(c2) != c1) {
+                } else {
+                    continue;
+                }
+            } else if (mapped.contains(t.charAt(i))) {
                     return false;
-                } 
-            } else {
-                h2.put(c2, c1);
             }
+            h1.put(s.charAt(i), t.charAt(i));
+            mapped.add(t.charAt(i));        
         }
         return true;
     }
