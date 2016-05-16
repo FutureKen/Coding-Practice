@@ -7,8 +7,6 @@ public class Solution {
         }
         HashMap<Character, Character> h1 = new HashMap<Character, Character>();
         for (int i = 0; i < s.length(); i++) {
-            char c1 = s.charAt(i);
-            char c2 = t.charAt(i);
             if (h1.containsKey(s.charAt(i))) {
                 if (h1.get(s.charAt(i)) != t.charAt(i)) {
                     return false;
