@@ -31,18 +31,18 @@ return its level order traversal as:
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Hide Company Tags</div>
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Amazon](/company/amazon/) [Apple](/company/apple/) [Bloomberg](/company/bloomberg/) [Facebook](/company/facebook/) [LinkedIn](/company/linkedin/) [Microsoft](/company/microsoft/)</span></div>
-
-<div>
-
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
-
-<span class="hidebutton" style="display: inline;">[Tree](/tag/tree/) [Breadth-first Search](/tag/breadth-first-search/)</span></div>
+<span class="hidebutton">[Amazon](/company/amazon/) [Apple](/company/apple/) [Bloomberg](/company/bloomberg/) [Facebook](/company/facebook/) [LinkedIn](/company/linkedin/) [Microsoft](/company/microsoft/)</span></div>
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[(M) Binary Tree Zigzag Level Order Traversal](/problems/binary-tree-zigzag-level-order-traversal/) [(E) Binary Tree Level Order Traversal II](/problems/binary-tree-level-order-traversal-ii/) [(E) Minimum Depth of Binary Tree](/problems/minimum-depth-of-binary-tree/) [(M) Binary Tree Vertical Order Traversal](/problems/binary-tree-vertical-order-traversal/)</span></div>
+<span class="hidebutton">[Tree](/tag/tree/) [Breadth-first Search](/tag/breadth-first-search/)</span></div>
+
+<div>
+
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
+
+<span class="hidebutton">[(M) Binary Tree Zigzag Level Order Traversal](/problems/binary-tree-zigzag-level-order-traversal/) [(E) Binary Tree Level Order Traversal II](/problems/binary-tree-level-order-traversal-ii/) [(E) Minimum Depth of Binary Tree](/problems/minimum-depth-of-binary-tree/) [(M) Binary Tree Vertical Order Traversal](/problems/binary-tree-vertical-order-traversal/)</span></div>
