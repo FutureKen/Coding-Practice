@@ -14,12 +14,12 @@ Returns the index of the first occurrence of needle in haystack, or -1 if needle
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Two Pointers](/tag/two-pointers/) [String](/tag/string/)</span></div>
+<span class="hidebutton">[Two Pointers](/tag/two-pointers/) [String](/tag/string/)</span></div>
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: inline;">[(H) Shortest Palindrome](/problems/shortest-palindrome/)</span></div>
+<span class="hidebutton">[(H) Shortest Palindrome](/problems/shortest-palindrome/)</span></div>
