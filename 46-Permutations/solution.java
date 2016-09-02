@@ -1,25 +1,20 @@
 public class Solution {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
-        if (nums == null || nums.length == 0) {
-             return result; 
-         }
-        List<Integer> perm = new ArrayList<Integer>();
-        permHelper(perm, result, nums);
-        return result;
-    }
-    public void permHelper(List<Integer> perm, List<List<Integer>> result, int[] nums) {
-        if (perm.size() == nums.length) {
-            result.add(new ArrayList<Integer>(perm));
-            return;
-        }
-        for (int i = 0; i < nums.length; i++) {
-            if (perm.contains(nums[i])) {
-                continue;
+        List<Integer> cur = new ArrayList<Integer>();
+        cur.add(nums[0]);
+        result.add(cur);
+        for (int i = 1; i < nums.length; i++) {
+            int cursize = result.size();
+            for (int j = 0; j < cursize; j++) {
+                for (int k = 0; k < result.get(j).size(); k++) {
+                    List<Integer> newlist = new ArrayList<Integer>(result.get(j));
+                    newlist.add(k, nums[i]);
+                    result.add(newlist);
+                }
+                result.get(j).add(nums[i]);
             }
-            perm.add(nums[i]);
-            permHelper(perm, result, nums);
-            perm.remove(perm.size() - 1);
         }
+        return result;
     }
 }
