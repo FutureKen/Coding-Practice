@@ -1,7 +1,7 @@
 public class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         int[] indegree = new int[numCourses];
-        Queue<Integer> queue = new ArrayDeque<Integer>();
+        Queue<Integer> queue = new LinkedList<Integer>();
         for (int[] pair : prerequisites) {
             indegree[pair[1]]++;
         }
