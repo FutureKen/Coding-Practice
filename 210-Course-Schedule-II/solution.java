@@ -1,9 +1,16 @@
 public class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
+        List<List<Integer>> graph = new ArrayList<>(numCourses);
         int[] indegree = new int[numCourses];
         Queue<Integer> queue = new LinkedList<Integer>();
+
+        for (int i = 0; i < numCourses; i++) {
+            graph.add(new ArrayList<>());
+        }
+
         for (int[] pair : prerequisites) {
-            indegree[pair[1]]++;
+            indegree[pair[0]]++;
+            graph.get(pair[1]).add(pair[0]);
         }
         for (int i = 0; i < indegree.length; i++) {
             if (indegree[i] == 0) {
@@ -11,15 +18,14 @@ public class Solution {
             }
         }
         int[] res = new int[numCourses];
+        int visited = 0;
         while (!queue.isEmpty()) {
-            int course = queue.poll();
+            int from = queue.poll();
             numCourses--;
-            res[numCourses] = course;
-            for (int[] pair: prerequisites) {
-                if (pair[0] == course) {
-                    if (--indegree[pair[1]] == 0) {
-                        queue.offer(pair[1]);
-                    }
+            res[visited++] = from;
+            for (int to: graph.get(from)) {
+                if (--indegree[to] == 0) {
+                    queue.offer(to);
                 }
             }
         }
