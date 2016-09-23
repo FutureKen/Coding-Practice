@@ -18,6 +18,7 @@ public class Solution {
                 }
             }
         }
+
         return target == nums[start] ? start : -1;
     }
 }
