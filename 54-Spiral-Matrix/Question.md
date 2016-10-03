@@ -24,6 +24,12 @@ You should return `[1,2,3,6,9,8,7,4,5]`.
 
 <div>
 
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
+
+<span class="hidebutton">[Google](/company/google/) [Microsoft](/company/microsoft/) [Uber](/company/uber/)</span></div>
+
+<div>
+
 <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
 <span class="hidebutton">[Array](/tag/array/)</span></div>
