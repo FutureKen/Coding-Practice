@@ -6,8 +6,7 @@ public class Solution {
     }
     private void helper(int n, int k, int start, ArrayList<Integer> cur) {
         if (k == 0) {
-            ArrayList<Integer> tmp = new ArrayList<Integer>(cur);
-            res.add(tmp);
+            res.add(new ArrayList<Integer>(cur));
             return;
         } 
         for (int i = start; i <= n; i++) {
